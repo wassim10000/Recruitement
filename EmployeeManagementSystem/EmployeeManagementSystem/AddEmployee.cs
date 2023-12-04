@@ -84,7 +84,7 @@ namespace EmployeeManagementSystem
                                     "VALUES(@employeeID, @fullName, @gender, @contactNum" +
                                     ", @position, @image, @salary, @insertDate, @status)";
 
-                                string path = Path.Combine(@"C:\Users\WINDOWS 10\source\repos\EmployeeManagementSystem\EmployeeManagementSystem\Directory\" 
+                                string path = Path.Combine(@"C:\Users\wassi\OneDrive\Desktop\Employee-Management-System-in-CSharp-main\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\Directory\"
                                     + addEmployee_id.Text.Trim() + ".jpg");
 
                                 string directoryPath = Path.GetDirectoryName(path);
