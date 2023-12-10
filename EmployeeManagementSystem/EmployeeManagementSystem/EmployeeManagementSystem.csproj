@@ -65,6 +65,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -137,6 +146,9 @@
     <Content Include="Assets\icons8_group_background_selected_filled_60px.png" />
     <Content Include="Assets\icons8_logout_rounded_up_filled_25px.png" />
     <Content Include="Assets\icons8_Salary_male_30px.png" />
+    <None Include="Resources\undraw_online_stats_0g94.png" />
+    <None Include="Resources\loginForm.jpg" />
+    <None Include="Resources\ezgif.com-gif-maker--12--1.gif" />
     <None Include="Resources\pexels-jane-doan-1024248.jpg" />
   </ItemGroup>
   <ItemGroup>
