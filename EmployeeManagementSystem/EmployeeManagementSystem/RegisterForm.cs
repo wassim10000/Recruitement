@@ -111,5 +111,10 @@ namespace EmployeeManagementSystem
         {
             signup_password.PasswordChar = signup_showPass.Checked ? '\0' : '*';
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

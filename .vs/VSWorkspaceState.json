@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\bin"
   ],
+=======
+    "\\EmployeeManagementSystem",
+    "\\EmployeeManagementSystem\\EmployeeManagementSystem"
+  ],
+  "SelectedNode": "\\EmployeeManagementSystem\\EmployeeManagementSystem\\RegisterForm.resx",
+>>>>>>> origin/main
   "PreviewInSolutionExplorer": false
 }
