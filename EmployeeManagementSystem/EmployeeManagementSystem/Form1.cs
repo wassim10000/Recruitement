@@ -120,5 +120,10 @@ namespace EmployeeManagementSystem
         {
 
         }
+
+        private void addEmployee_position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

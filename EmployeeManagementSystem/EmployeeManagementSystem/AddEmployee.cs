@@ -15,8 +15,8 @@ namespace EmployeeManagementSystem
 {
     public partial class AddEmployee : UserControl
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-60E5KM3A;Initial Catalog=Recruitement;Integrated Security=True;Pooling=False");
-
+        //SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-60E5KM3A;Initial Catalog=Recruitement;Integrated Security=True;Pooling=False");
+        SqlConnection connect = new SqlConnection(@"Data Source=(localdb)\ProjectModels;Initial Catalog=Recruitement;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         public AddEmployee()
         {
             InitializeComponent();
@@ -326,6 +326,26 @@ namespace EmployeeManagementSystem
                 }
 
             }
+        }
+
+        private void addEmployee_status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addEmployee_position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addEmployee_picture_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

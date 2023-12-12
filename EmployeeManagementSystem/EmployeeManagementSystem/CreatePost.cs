@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace EmployeeManagementSystem
 {
-    public partial class Form2 : Form
+    public partial class CreatePost : Form
     {
-        public Form2()
+        public CreatePost()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

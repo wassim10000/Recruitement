@@ -41,9 +41,9 @@ namespace EmployeeManagementSystem
             this.login_signupBtn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.addEmployee_position = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -192,8 +192,8 @@ namespace EmployeeManagementSystem
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.addEmployee_position);
             this.panel1.Controls.Add(this.login_btn);
             this.panel1.Controls.Add(this.login_showPass);
             this.panel1.Controls.Add(this.login_password);
@@ -211,6 +211,29 @@ namespace EmployeeManagementSystem
             this.panel1.Size = new System.Drawing.Size(1115, 687);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(690, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "You are ?";
+            // 
+            // addEmployee_position
+            // 
+            this.addEmployee_position.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_position.FormattingEnabled = true;
+            this.addEmployee_position.Items.AddRange(new object[] {
+            "Company",
+            "Candidat"});
+            this.addEmployee_position.Location = new System.Drawing.Point(690, 205);
+            this.addEmployee_position.Name = "addEmployee_position";
+            this.addEmployee_position.Size = new System.Drawing.Size(261, 23);
+            this.addEmployee_position.TabIndex = 20;
+            this.addEmployee_position.SelectedIndexChanged += new System.EventHandler(this.addEmployee_position_SelectedIndexChanged);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -222,30 +245,6 @@ namespace EmployeeManagementSystem
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(715, 171);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Candidat";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(868, 171);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(41, 17);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "RH";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -283,8 +282,8 @@ namespace EmployeeManagementSystem
         private System.Windows.Forms.Button login_signupBtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox addEmployee_position;
     }
 }
 
