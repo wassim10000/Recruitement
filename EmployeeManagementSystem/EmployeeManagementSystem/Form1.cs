@@ -50,24 +50,21 @@ namespace EmployeeManagementSystem
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            if(login_username.Text == ""
-                || login_password.Text == "")
+            if (login_username.Text == "" || login_password.Text == "")
             {
-                MessageBox.Show("Please fill all blank fields"
-                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if(connect.State == ConnectionState.Closed)
+                if (connect.State == ConnectionState.Closed)
                 {
                     try
                     {
                         connect.Open();
 
-                        string selectData = "SELECT * FROM users WHERE username = @username " +
-                            "AND password = @password";
+                        string selectData = "SELECT * FROM login WHERE USERNAME = @username AND PASSWORD = @password";
 
-                        using(SqlCommand cmd = new SqlCommand(selectData, connect))
+                        using (SqlCommand cmd = new SqlCommand(selectData, connect))
                         {
                             cmd.Parameters.AddWithValue("@username", login_username.Text.Trim());
                             cmd.Parameters.AddWithValue("@password", login_password.Text.Trim());
@@ -76,33 +73,76 @@ namespace EmployeeManagementSystem
                             DataTable table = new DataTable();
                             adapter.Fill(table);
 
-                            if(table.Rows.Count >= 1)
+                            if (table.Rows.Count >= 1)
                             {
-                                MessageBox.Show("Login successfully!"
-                                    , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                string userType = table.Rows[0]["USER_TYPE"].ToString();
+                                int loginID = Convert.ToInt32(table.Rows[0]["ID"]);
 
-                                MainForm mForm = new MainForm();
-                                mForm.Show();
-                                this.Hide();
+                                // Check if the corresponding row in entreprise or candidats table has a non-empty name
+                                string checkDataQuery = (userType == "Company")
+                                    ? "SELECT COUNT(*) FROM entreprise WHERE ID = @id AND NOM != ''"
+                                    : "SELECT COUNT(*) FROM candidats WHERE ID = @id AND NOM != ''";
+
+                                using (SqlCommand checkDataCmd = new SqlCommand(checkDataQuery, connect))
+                                {
+                                    checkDataCmd.Parameters.AddWithValue("@id", loginID);
+                                    int dataCount = (int)checkDataCmd.ExecuteScalar();
+
+                                    if (dataCount >= 1)
+                                    {
+                                        MessageBox.Show("Login successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                        // Navigate to the dashboard for company or candidate
+                                        if (userType == "Company")
+                                        {
+                                            // Navigate to dashboard page for company
+                                            Dashboard dashboardCompanyForm = new Dashboard();
+                                            dashboardCompanyForm.Show();
+                                        }
+                                        else if (userType == "Candidat")
+                                        {
+                                            // Navigate to dashboard page for candidate
+                                            Dashboard dashboardCandidateForm = new Dashboard();
+                                            dashboardCandidateForm.Show();
+                                        }
+
+                                        this.Hide();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Data not found or name is empty. Redirecting to create account/post.", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                        // Navigate to create account/post page for company or candidate
+                                        if (userType == "Company")
+                                        {
+                                            createAccount companyAccountForm = new createAccount();
+                                            companyAccountForm.Show();
+                                        }
+                                        else if (userType == "Candidat")
+                                        {
+                                            CreatePost candidatePostForm = new CreatePost();
+                                            candidatePostForm.Show();
+                                        }
+
+                                        this.Hide();
+                                    }
+                                }
                             }
                             else
                             {
-                                MessageBox.Show("Incorrect Username/Password"
-                                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Incorrect Username/Password", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex
-                        , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally
                     {
                         connect.Close();
                     }
                 }
-                
             }
         }
 

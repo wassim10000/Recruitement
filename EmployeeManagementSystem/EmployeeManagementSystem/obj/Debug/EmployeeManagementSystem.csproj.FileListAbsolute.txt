@@ -44,3 +44,20 @@ C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\Em
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe.config
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.pdb
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.AddEmployee.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.createAccount.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.CreatePost.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Dashboard.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Form1.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.MainForm.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.RegisterForm.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Salary.resources
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.GenerateResource.cache
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
+C:\Users\wassi\OneDrive\Desktop\Recruitement-C-\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb

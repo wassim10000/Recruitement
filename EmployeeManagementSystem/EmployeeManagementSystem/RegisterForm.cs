@@ -38,75 +38,88 @@ namespace EmployeeManagementSystem
 
         }
 
+
         private void signup_btn_Click(object sender, EventArgs e)
         {
-            if(signup_username.Text == ""
-                || signup_password.Text == "")
+            if (string.IsNullOrWhiteSpace(signup_username.Text) || string.IsNullOrWhiteSpace(signup_password.Text) || addEmployee_position.SelectedItem == null)
             {
-                MessageBox.Show("Please fill all blank fields"
-                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            try
             {
-                if(connect.State != ConnectionState.Open)
+                connect.Open();
+
+                string selectUsername = "SELECT COUNT(ID) FROM login WHERE USERNAME = @user";
+
+                using (SqlCommand checkUser = new SqlCommand(selectUsername, connect))
                 {
-                    try
+                    checkUser.Parameters.Add("@user", SqlDbType.VarChar).Value = signup_username.Text.Trim();
+                    int count = (int)checkUser.ExecuteScalar();
+
+                    if (count >= 1)
                     {
-                        connect.Open();
-                        // TO CHECK IF THE USER IS EXISTING ALREADY
-                        string selectUsername = "SELECT COUNT(id) FROM users WHERE username = @user";
+                        MessageBox.Show(signup_username.Text.Trim() + " is already taken", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
 
-                        using(SqlCommand checkUser = new SqlCommand(selectUsername, connect))
+                string insertData = "INSERT INTO login (USERNAME, PASSWORD, USER_TYPE) VALUES (@username, @password, @userType); SELECT SCOPE_IDENTITY();";
+
+                using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                {
+                    cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = signup_username.Text.Trim();
+                    cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = signup_password.Text.Trim();
+
+                    // Check for null before using SelectedItem
+                    if (addEmployee_position.SelectedItem != null)
+                    {
+                        string userType = addEmployee_position.SelectedItem.ToString();
+                        cmd.Parameters.Add("@userType", SqlDbType.VarChar).Value = userType;
+
+                        int loginID = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (userType == "Company")
                         {
-                            checkUser.Parameters.AddWithValue("@user", signup_username.Text.Trim());
-                            int count = (int)checkUser.ExecuteScalar();
-
-                            if(count >= 1)
+                            string insertEntrepriseData = "INSERT INTO entreprise (ID, NOM, SECTOR, TAILLE, ADRESSE, PHONE, WEBSITE) VALUES (@id, '', '', 0, '', '', '')";
+                            using (SqlCommand cmdEntreprise = new SqlCommand(insertEntrepriseData, connect))
                             {
-                                MessageBox.Show(signup_username.Text.Trim() + " is already taken"
-                                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                cmdEntreprise.Parameters.Add("@id", SqlDbType.Int).Value = loginID;
+                                cmdEntreprise.ExecuteNonQuery();
                             }
-                            else
+                        }
+                        else if (userType == "Candidat")
+                        {
+                            string insertCandidatData = "INSERT INTO candidats (ID, NOM, PRENOM, EMAIL, PHONE) VALUES (@id, '', '', '', '')";
+                            using (SqlCommand cmdCandidat = new SqlCommand(insertCandidatData, connect))
                             {
-                                DateTime today = DateTime.Today;
-
-                                string insertData = "INSERT INTO users " +
-                                    "(username, password, date_register) " +
-                                    "VALUES(@username, @password, @dateReg)";
-
-                                using (SqlCommand cmd = new SqlCommand(insertData, connect))
-                                {
-                                    cmd.Parameters.AddWithValue("@username", signup_username.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@password", signup_password.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@dateReg", today);
-
-                                    cmd.ExecuteNonQuery();
-
-                                    MessageBox.Show("Registered successfully!"
-                                        , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                                    Form1 loginForm = new Form1();
-                                    loginForm.Show();
-                                    this.Hide();
-                                }
+                                cmdCandidat.Parameters.Add("@id", SqlDbType.Int).Value = loginID;
+                                cmdCandidat.ExecuteNonQuery();
                             }
                         }
 
-                        
+                        MessageBox.Show("Registered successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }catch(Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex
-                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Form1 loginForm = new Form1();
+                        loginForm.Show();
+                        this.Hide();
                     }
-                    finally
+                    else
                     {
-                        connect.Close();
+                        MessageBox.Show("Please select a user type", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connect.Close();
+            }
         }
-
         private void signup_showPass_CheckedChanged(object sender, EventArgs e)
         {
             signup_password.PasswordChar = signup_showPass.Checked ? '\0' : '*';
