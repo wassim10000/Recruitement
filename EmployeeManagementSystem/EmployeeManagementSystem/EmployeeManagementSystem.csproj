@@ -52,6 +52,18 @@
     <Compile Include="AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddExperience.Designer.cs">
+      <DependentUpon>AddExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEducation.Designer.cs">
+      <DependentUpon>AddEducation.cs</DependentUpon>
+    </Compile>
     <Compile Include="createAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="CreatePost.Designer.cs">
       <DependentUpon>CreatePost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardCandidate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardCandidate.Designer.cs">
+      <DependentUpon>DashboardCandidate.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -76,6 +94,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CandidateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandidateForm.Designer.cs">
+      <DependentUpon>CandidateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -98,6 +122,20 @@
       <DependentUpon>Salary.cs</DependentUpon>
     </Compile>
     <Compile Include="SalaryData.cs" />
+    <!--test-->
+    <Compile Include="PostCandidature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostCandidature.Designer.cs">
+      <DependentUpon>PostCandidature.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddExperience.resx">
+      <DependentUpon>AddExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEducation.resx">
+      <DependentUpon>AddEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <!--test-->
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,11 +145,17 @@
     <EmbeddedResource Include="CreatePost.resx">
       <DependentUpon>CreatePost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashboardCandidate.resx">
+      <DependentUpon>DashboardCandidate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandidateForm.resx">
+      <DependentUpon>CandidateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -132,6 +176,32 @@
     <EmbeddedResource Include="Salary.resx">
       <DependentUpon>Salary.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="Assets\Poppins\Poppins-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Assets\Poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Assets\Poppins\Poppins-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Assets\Poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Assets\Poppins\Poppins-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Assets\Poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Assets\Poppins\Poppins-ExtraLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Assets\Poppins\Poppins-ExtraLightItalic.ttf" />
+    <None Include="Assets\Poppins\Poppins-Italic.ttf" />
+    <None Include="Assets\Poppins\Poppins-Light.ttf" />
+    <None Include="Assets\Poppins\Poppins-LightItalic.ttf" />
+    <None Include="Assets\Poppins\Poppins-Medium.ttf" />
+    <None Include="Assets\Poppins\Poppins-MediumItalic.ttf" />
+    <None Include="Assets\Poppins\Poppins-Regular.ttf" />
+    <None Include="Assets\Poppins\Poppins-SemiBold.ttf" />
+    <None Include="Assets\Poppins\Poppins-SemiBoldItalic.ttf" />
+    <None Include="Assets\Poppins\Poppins-Thin.ttf" />
+    <None Include="Assets\Poppins\Poppins-ThinItalic.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,6 +225,7 @@
     <Content Include="Assets\icons8_group_background_selected_filled_60px.png" />
     <Content Include="Assets\icons8_logout_rounded_up_filled_25px.png" />
     <Content Include="Assets\icons8_Salary_male_30px.png" />
+    <Content Include="Assets\Poppins\OFL.txt" />
     <None Include="Resources\undraw_online_stats_0g94.png" />
     <None Include="Resources\loginForm.jpg" />
     <None Include="Resources\ezgif.com-gif-maker--12--1.gif" />

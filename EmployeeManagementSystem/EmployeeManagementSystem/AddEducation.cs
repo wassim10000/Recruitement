@@ -26,5 +26,10 @@ namespace EmployeeManagementSystem
         {
 
         }
+
+        private void AddEducation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
