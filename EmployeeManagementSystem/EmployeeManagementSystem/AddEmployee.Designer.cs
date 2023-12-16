@@ -42,6 +42,7 @@ namespace EmployeeManagementSystem
             this.addEmployee_updateBtn = new System.Windows.Forms.Button();
             this.addEmployee_addBtn = new System.Windows.Forms.Button();
             this.addEmployee_importBtn = new System.Windows.Forms.Button();
+            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
             this.addEmployee_position = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.addEmployee_phoneNum = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace EmployeeManagementSystem
             this.addEmployee_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -94,6 +94,7 @@ namespace EmployeeManagementSystem
             this.dataGridView1.Size = new System.Drawing.Size(798, 193);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -258,6 +259,18 @@ namespace EmployeeManagementSystem
             this.addEmployee_importBtn.UseVisualStyleBackColor = false;
             this.addEmployee_importBtn.Click += new System.EventHandler(this.addEmployee_importBtn_Click);
             // 
+            // addEmployee_picture
+            // 
+            this.addEmployee_picture.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.addEmployee_picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addEmployee_picture.Location = new System.Drawing.Point(738, 34);
+            this.addEmployee_picture.Name = "addEmployee_picture";
+            this.addEmployee_picture.Size = new System.Drawing.Size(82, 92);
+            this.addEmployee_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.addEmployee_picture.TabIndex = 12;
+            this.addEmployee_picture.TabStop = false;
+            this.addEmployee_picture.Click += new System.EventHandler(this.addEmployee_picture_Click);
+            // 
             // addEmployee_position
             // 
             this.addEmployee_position.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,18 +381,6 @@ namespace EmployeeManagementSystem
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(839, 226);
             this.panel4.TabIndex = 1;
-            // 
-            // addEmployee_picture
-            // 
-            this.addEmployee_picture.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.addEmployee_picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addEmployee_picture.Location = new System.Drawing.Point(738, 34);
-            this.addEmployee_picture.Name = "addEmployee_picture";
-            this.addEmployee_picture.Size = new System.Drawing.Size(82, 92);
-            this.addEmployee_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.addEmployee_picture.TabIndex = 12;
-            this.addEmployee_picture.TabStop = false;
-            this.addEmployee_picture.Click += new System.EventHandler(this.addEmployee_picture_Click);
             // 
             // AddEmployee
             // 

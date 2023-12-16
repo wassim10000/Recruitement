@@ -42,8 +42,9 @@ namespace EmployeeManagementSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dashboard1 = new EmployeeManagementSystem.Dashboard();
-            this.addEmployee1 = new EmployeeManagementSystem.AddEmployee();
             this.salary1 = new EmployeeManagementSystem.Salary();
+            this.addExperience_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,6 +90,7 @@ namespace EmployeeManagementSystem
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.logout_btn);
             this.panel2.Controls.Add(this.salary_btn);
@@ -162,7 +164,7 @@ namespace EmployeeManagementSystem
             this.addEmployee_btn.ForeColor = System.Drawing.Color.White;
             this.addEmployee_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_30px;
             this.addEmployee_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addEmployee_btn.Location = new System.Drawing.Point(14, 277);
+            this.addEmployee_btn.Location = new System.Drawing.Point(11, 276);
             this.addEmployee_btn.Name = "addEmployee_btn";
             this.addEmployee_btn.Size = new System.Drawing.Size(200, 40);
             this.addEmployee_btn.TabIndex = 3;
@@ -213,7 +215,6 @@ namespace EmployeeManagementSystem
             // panel3
             // 
             this.panel3.Controls.Add(this.dashboard1);
-            this.panel3.Controls.Add(this.addEmployee1);
             this.panel3.Controls.Add(this.salary1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(225, 35);
@@ -229,19 +230,51 @@ namespace EmployeeManagementSystem
             this.dashboard1.TabIndex = 2;
             this.dashboard1.Load += new System.EventHandler(this.dashboard1_Load);
             // 
-            // addEmployee1
-            // 
-            this.addEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.addEmployee1.Name = "addEmployee1";
-            this.addEmployee1.Size = new System.Drawing.Size(875, 565);
-            this.addEmployee1.TabIndex = 1;
-            // 
             // salary1
             // 
             this.salary1.Location = new System.Drawing.Point(0, 0);
             this.salary1.Name = "salary1";
             this.salary1.Size = new System.Drawing.Size(875, 565);
             this.salary1.TabIndex = 0;
+            // 
+            // addExperience_btn
+            // 
+            this.addExperience_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.addExperience_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addExperience_btn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.addExperience_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.addExperience_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.addExperience_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addExperience_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addExperience_btn.ForeColor = System.Drawing.Color.White;
+            this.addExperience_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_30px;
+            this.addExperience_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addExperience_btn.Location = new System.Drawing.Point(14, 277);
+            this.addExperience_btn.Name = "addExperience_btn";
+            this.addExperience_btn.Size = new System.Drawing.Size(200, 40);
+            this.addExperience_btn.TabIndex = 3;
+            this.addExperience_btn.Text = "ADD Experience";
+            this.addExperience_btn.UseVisualStyleBackColor = false;
+            this.addExperience_btn.Click += new System.EventHandler(this.addExperience_btn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_30px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(12, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 40);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Create Post";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -276,11 +309,19 @@ namespace EmployeeManagementSystem
         private System.Windows.Forms.Button dashboard_btn;
         private System.Windows.Forms.Button salary_btn;
         private System.Windows.Forms.Button addEmployee_btn;
+        //test
+        private System.Windows.Forms.Button addExperience_btn;
+      
+        private System.Windows.Forms.Button addEducation_btn;
+        private System.Windows.Forms.Button createPost_btn;
+        //end test
         private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private Salary salary1;
         private Dashboard dashboard1;
         private AddEmployee addEmployee1;
+        private AddEmployee addExperience1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -31,15 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEducation));
             this.button3 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,22 +63,11 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.textBox4.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.textBox4.Location = new System.Drawing.Point(292, 338);
+            this.textBox4.Location = new System.Drawing.Point(292, 369);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(170, 20);
             this.textBox4.TabIndex = 67;
             this.textBox4.Text = "Date of end";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(289, 364);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(261, 30);
-            this.textBox5.TabIndex = 66;
             // 
             // textBox2
             // 
@@ -84,22 +75,11 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.textBox2.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.textBox2.Location = new System.Drawing.Point(292, 271);
+            this.textBox2.Location = new System.Drawing.Point(292, 302);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 20);
             this.textBox2.TabIndex = 65;
             this.textBox2.Text = "Date of start";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(289, 297);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 30);
-            this.textBox3.TabIndex = 64;
             // 
             // textBox8
             // 
@@ -107,7 +87,7 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.textBox8.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.textBox8.Location = new System.Drawing.Point(292, 198);
+            this.textBox8.Location = new System.Drawing.Point(292, 164);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(170, 20);
             this.textBox8.TabIndex = 63;
@@ -119,7 +99,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(289, 224);
+            this.textBox6.Location = new System.Drawing.Point(289, 190);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(261, 30);
@@ -135,7 +115,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(328, 478);
+            this.button1.Location = new System.Drawing.Point(328, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 48);
             this.button1.TabIndex = 59;
@@ -173,12 +153,55 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(387, 410);
+            this.pictureBox2.Location = new System.Drawing.Point(387, 441);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 61;
             this.pictureBox2.TabStop = false;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.LightGray;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox9.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.textBox9.Location = new System.Drawing.Point(289, 240);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(170, 20);
+            this.textBox9.TabIndex = 74;
+            this.textBox9.Text = "School / university";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(289, 266);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(261, 30);
+            this.textBox10.TabIndex = 73;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.AllowDrop = true;
+            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.dateTimePicker1.Location = new System.Drawing.Point(289, 328);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(258, 20);
+            this.dateTimePicker1.TabIndex = 87;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 12, 14, 10, 12, 31, 0);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.AllowDrop = true;
+            this.dateTimePicker2.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.dateTimePicker2.Location = new System.Drawing.Point(289, 395);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(258, 20);
+            this.dateTimePicker2.TabIndex = 88;
+            this.dateTimePicker2.Value = new System.DateTime(2023, 12, 14, 10, 12, 31, 0);
             // 
             // AddEducation
             // 
@@ -186,11 +209,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(897, 655);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.pictureBox2);
@@ -200,6 +225,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddEducation";
             this.Text = "AddEducation";
+            this.Load += new System.EventHandler(this.AddEducation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -210,14 +236,16 @@
 
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

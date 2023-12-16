@@ -12,10 +12,10 @@ using System.Data.SqlClient;
 
 namespace EmployeeManagementSystem
 {
-    public partial class Dashboard : UserControl
+    public partial class DashboardCandidate : UserControl
     {
         SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WINDOWS 10\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
-        public Dashboard()
+        public DashboardCandidate()
         {
             InitializeComponent();
 
@@ -54,7 +54,7 @@ namespace EmployeeManagementSystem
                         if (reader.Read())
                         {
                             int count = Convert.ToInt32(reader[0]);
-                            dashboard_TE.Text = count.ToString();
+                            dashboardCandidate_TE.Text = count.ToString();
                         }
                         reader.Close();
                     }
@@ -90,7 +90,7 @@ namespace EmployeeManagementSystem
                         if (reader.Read())
                         {
                             int count = Convert.ToInt32(reader[0]);
-                            dashboard_AE.Text = count.ToString();
+                            dashboardCandidate_AE.Text = count.ToString();
                         }
                         reader.Close();
                     }
@@ -127,7 +127,7 @@ namespace EmployeeManagementSystem
                         if (reader.Read())
                         {
                             int count = Convert.ToInt32(reader[0]);
-                            dashboard_IE.Text = count.ToString();
+                            dashboardCandidate_IE.Text = count.ToString();
                         }
                         reader.Close();
                     }
@@ -150,12 +150,21 @@ namespace EmployeeManagementSystem
 
         }
 
+        private void DashboardCandidate_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardCandidate_Load_1(object sender, EventArgs e)
+        {
+
+        }
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

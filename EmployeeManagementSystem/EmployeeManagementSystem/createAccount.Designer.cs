@@ -229,7 +229,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.button1.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1115, 496);
+            this.button1.Location = new System.Drawing.Point(1171, 483);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 65);
             this.button1.TabIndex = 36;

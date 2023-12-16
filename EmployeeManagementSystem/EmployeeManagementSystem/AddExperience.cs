@@ -21,5 +21,10 @@ namespace EmployeeManagementSystem
         {
 
         }
+
+        private void AddExperience_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

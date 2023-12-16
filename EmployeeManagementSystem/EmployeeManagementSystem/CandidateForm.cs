@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EmployeeManagementSystem
 {
-    public partial class MainForm : Form
+    public partial class CandidateForm : Form
     {
-        public MainForm()
+        public CandidateForm()
         {
             InitializeComponent();
         }
@@ -35,13 +35,13 @@ namespace EmployeeManagementSystem
             }
         }
 
-        private void dashboard_btn_Click(object sender, EventArgs e)
+        private void dashboardCandidate_btn_Click(object sender, EventArgs e)
         {
-            dashboard1.Visible = true;
+            dashboardCandidate1.Visible = true;
             addEmployee1.Visible = false;
             salary1.Visible = false;
 
-            Dashboard dashForm = dashboard1 as Dashboard;
+            DashboardCandidate dashForm = dashboardCandidate1 as DashboardCandidate;
 
             if(dashForm != null)
             {
@@ -50,20 +50,20 @@ namespace EmployeeManagementSystem
 
         }
 
-        private void addEmployee_btn_Click(object sender, EventArgs e)
-        {
-            dashboard1.Visible = false;
-            addEmployee1.Visible = true;
-            salary1.Visible = false;
+        //private void addEmployee_btn_Click(object sender, EventArgs e)
+        //{
+        //    dashboard1.Visible = false;
+        //    addEmployee1.Visible = true;
+        //    salary1.Visible = false;
 
-            AddEmployee addEmForm = addEmployee1 as AddEmployee;
+        //    AddEmployee addEmForm = addEmployee1 as AddEmployee;
 
-            if(addEmForm != null)
-            {
-                addEmForm.RefreshData();
-            }
+        //    if(addEmForm != null)
+        //    {
+        //        addEmForm.RefreshData();
+        //    }
 
-        }
+        //}
 
 
         //test
@@ -88,20 +88,20 @@ namespace EmployeeManagementSystem
 
 
 
-        private void salary_btn_Click(object sender, EventArgs e)
-        {
-            dashboard1.Visible = false;
-            addEmployee1.Visible = false;
-            salary1.Visible = true;
+        //private void salary_btn_Click(object sender, EventArgs e)
+        //{
+        //    dashboard1.Visible = false;
+        //    addEmployee1.Visible = false;
+        //    salary1.Visible = true;
 
-            Salary salaryForm = salary1 as Salary;
+        //    Salary salaryForm = salary1 as Salary;
 
-            if(salaryForm != null)
-            {
-                salaryForm.RefreshData();
-            }
+        //    if(salaryForm != null)
+        //    {
+        //        salaryForm.RefreshData();
+        //    }
 
-        }
+        //}
 
         private void dashboard1_Load(object sender, EventArgs e)
         {
@@ -109,6 +109,11 @@ namespace EmployeeManagementSystem
         }
 
         private void addEducation1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CandidateForm_Load(object sender, EventArgs e)
         {
 
         }
