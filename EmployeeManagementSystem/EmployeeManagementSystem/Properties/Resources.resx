@@ -127,6 +127,9 @@
   <data name="icons8_dashboard_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons8_dashboard_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_group_background_selected_filled_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icons8_group_background_selected_filled_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_Salary_male_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons8_Salary_male_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,13 +148,13 @@
   <data name="ezgif.com-gif-maker--12--1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif.com-gif-maker--12--1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="undraw_online_stats_0g94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undraw_online_stats_0g94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pexels-jane-doan-1024248" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-jane-doan-1024248.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_group_background_selected_filled_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons8_group_background_selected_filled_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="undraw_online_stats_0g94" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undraw_online_stats_0g94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="151901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1519011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,6 +63,16 @@ namespace EmployeeManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _151901 {
+            get {
+                object obj = ResourceManager.GetObject("151901", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_gif_maker__12__1 {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-gif-maker--12--1", resourceCulture);
