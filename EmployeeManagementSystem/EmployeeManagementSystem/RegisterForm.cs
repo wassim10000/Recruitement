@@ -42,7 +42,7 @@ namespace EmployeeManagementSystem
         private void signup_btn_Click(object sender, EventArgs e)
         {
             if(signup_username.Text == ""
-                || signup_password.Text == "") ||
+                || signup_password.Text == "") 
             {
                 MessageBox.Show("Please fill all blank fields"
                     , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -129,6 +129,16 @@ namespace EmployeeManagementSystem
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signup_username_TextChanged(object sender, EventArgs e)
         {
 
         }

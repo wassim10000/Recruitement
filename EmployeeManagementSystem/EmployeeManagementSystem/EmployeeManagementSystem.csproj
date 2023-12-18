@@ -88,6 +88,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExperienceData.cs" />
     <Compile Include="EmployeeData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -129,6 +130,9 @@
     <Compile Include="PostCandidature.Designer.cs">
       <DependentUpon>PostCandidature.cs</DependentUpon>
     </Compile>
+    <Content Include="Resources\151901.png" />
+    <None Include="Resources\undraw_search_app_oso2.png" />
+    <None Include="Resources\1519011.png" />
     <EmbeddedResource Include="AddExperience.resx">
       <DependentUpon>AddExperience.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostCandidature.resx">
+      <DependentUpon>PostCandidature.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

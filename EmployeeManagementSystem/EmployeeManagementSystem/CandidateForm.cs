@@ -27,7 +27,7 @@ namespace EmployeeManagementSystem
             DialogResult check = MessageBox.Show("Are you sure you want to logout?"
                 , "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(check == DialogResult.Yes)
+            if (check == DialogResult.Yes)
             {
                 Form1 loginForm = new Form1();
                 loginForm.Show();
@@ -38,12 +38,12 @@ namespace EmployeeManagementSystem
         private void dashboardCandidate_btn_Click(object sender, EventArgs e)
         {
             dashboardCandidate1.Visible = true;
-            addEmployee1.Visible = false;
-            salary1.Visible = false;
+            addExperience1.Visible = false;
+            addEducation1.Visible = false;
 
             DashboardCandidate dashForm = dashboardCandidate1 as DashboardCandidate;
 
-            if(dashForm != null)
+            if (dashForm != null)
             {
                 dashForm.RefreshData();
             }
@@ -70,10 +70,10 @@ namespace EmployeeManagementSystem
 
         private void addExperience_btn_Click(object sender, EventArgs e)
         {
-            dashboard1.Visible = false;
+            dashboardCandidate1.Visible = false;
             addExperience1.Visible = true;
-            addEmployee1.Visible = false;
-            salary1.Visible = false;
+            addEducation1.Visible = false;
+
 
             AddExperience addExForm = addExperience1 as AddExperience;
 
@@ -103,7 +103,7 @@ namespace EmployeeManagementSystem
 
         //}
 
-        private void dashboard1_Load(object sender, EventArgs e)
+        private void dashboardCandidate1_Load(object sender, EventArgs e)
         {
 
         }

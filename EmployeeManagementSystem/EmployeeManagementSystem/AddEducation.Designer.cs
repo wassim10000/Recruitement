@@ -49,9 +49,9 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(502, 599);
+            this.button3.Location = new System.Drawing.Point(520, 575);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 44);
+            this.button3.Size = new System.Drawing.Size(162, 56);
             this.button3.TabIndex = 72;
             this.button3.Text = "Submit";
             this.button3.UseVisualStyleBackColor = false;
@@ -112,11 +112,11 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(257, 511);
+            this.button1.Location = new System.Drawing.Point(265, 511);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 48);
+            this.button1.Size = new System.Drawing.Size(144, 64);
             this.button1.TabIndex = 59;
             this.button1.Text = "Import Certificate or diploma";
             this.button1.UseVisualStyleBackColor = false;

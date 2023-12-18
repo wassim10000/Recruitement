@@ -54,3 +54,4 @@ C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\Em
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Assets\Poppins\Poppins-ExtraLight.ttf
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.DashboardCandidate.resources
 C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.CandidateForm.resources
+C:\Users\hadil\Desktop\1info4\projet c#\Projet Final\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.PostCandidature.resources

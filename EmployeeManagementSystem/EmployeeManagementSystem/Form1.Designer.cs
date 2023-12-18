@@ -169,8 +169,8 @@ namespace EmployeeManagementSystem
             this.login_signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
             this.login_signupBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_signupBtn.FlatAppearance.BorderSize = 0;
-            this.login_signupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.login_signupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.login_signupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
+            this.login_signupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
             this.login_signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_signupBtn.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_signupBtn.ForeColor = System.Drawing.Color.Black;

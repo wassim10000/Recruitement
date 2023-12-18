@@ -23,6 +23,8 @@ namespace EmployeeManagementSystem
             displayAE();
             displayIE();
         }
+      
+      
 
         public void RefreshData()
         {
@@ -165,6 +167,16 @@ namespace EmployeeManagementSystem
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardCandidate_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

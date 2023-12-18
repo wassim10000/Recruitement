@@ -69,7 +69,7 @@ namespace EmployeeManagementSystem
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
             this.panel3.Controls.Add(this.dashboard_TE);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
@@ -77,6 +77,7 @@ namespace EmployeeManagementSystem
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(236, 123);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dashboard_TE
             // 
@@ -102,7 +103,7 @@ namespace EmployeeManagementSystem
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
             this.panel4.Controls.Add(this.dashboard_AE);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.pictureBox2);
@@ -136,7 +137,7 @@ namespace EmployeeManagementSystem
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(104)))), ((int)(((byte)(205)))));
             this.panel5.Controls.Add(this.dashboard_IE);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.pictureBox3);
@@ -182,10 +183,10 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::EmployeeManagementSystem.Properties.Resources.pexels_jane_doan_1024248;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Image = global::EmployeeManagementSystem.Properties.Resources.undraw_search_app_oso2;
+            this.pictureBox4.Location = new System.Drawing.Point(184, 1);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(842, 322);
+            this.pictureBox4.Size = new System.Drawing.Size(460, 322);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;

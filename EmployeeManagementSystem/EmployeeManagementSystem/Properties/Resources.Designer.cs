@@ -189,5 +189,15 @@ namespace EmployeeManagementSystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_search_app_oso2 {
+            get {
+                object obj = ResourceManager.GetObject("undraw_search_app_oso2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
